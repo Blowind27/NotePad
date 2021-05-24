@@ -1,7 +1,10 @@
 # NotePad
 This is an AndroidStudio rebuild of google SDK sample NotePad
+
 1.时间戳添加
+
 1.1. 修改noteslist_item.xml
+
 noteslist_item.xml布局文件是笔记每个条目的布局，原应用中noteslist_item.xml代码如下:
 
 <RelativeLayout android:layout_height="match_parent"
