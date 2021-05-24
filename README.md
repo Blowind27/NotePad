@@ -110,15 +110,18 @@ private static final String[] PROJECTION = new String[] {
     };
 
 PROJECTION只是定义了需要被取出来的数据列，而之后用Cursor进行数据库查询，再之后用Adapter进行装填。
-在看完源码之后，Cursor不用变化，我们需要将显示列dataColumns和他们的viewIDs加入修改时间这一属性
-原来的代码:
+
+在看完源码之后，Cursor不用变化，我们需要将显示列dataColumns和他们的viewIDs加入修改时间这一属性原来的代码:
 
 String[] dataColumns = { NotePad.Notes.COLUMN_NAME_TITLE};
+
 int[] viewIDs = { android.R.id.text1 };
 
 加入修改时间后:
 
 String[] dataColumns = { NotePad.Notes.COLUMN_NAME_TITLE, NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE }//加入修改时间;
+
 int[] viewIDs = { android.R.id.text1, R.id.text2 }//加入修改时间;
+
 再到Adapter进行装配和显示
 
