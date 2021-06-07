@@ -119,3 +119,4 @@ PROJECTION只是定义了需要被取出来的数据列，而之后用Cursor进�
     int[] viewIDs = { android.R.id.text1, R.id.text2 }//加入修改时间;
 
 再到Adapter进行装配和显示
+![Image text](https://github.com/Blowind27/NotePad/blob/master/WBIPUYWF5%7DOOS%5DM%7BSJF7_%25D.png)
